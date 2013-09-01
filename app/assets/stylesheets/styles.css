@@ -13,8 +13,8 @@ display: block;
 
 @font-face {
 	font-family: 'QikkiRegRegular';
-	src: url('Qarmic_sans_Abridged-webfont.eot');
-	src: local('Qarmic_sans_Abridged-webfont'), url('Qarmic_sans_Abridged-webfont.ttf') format('truetype');
+	src: url('/Qarmic_sans_Abridged-webfont.eot');
+	src: local('/Qarmic_sans_Abridged-webfont'), url('/Qarmic_sans_Abridged-webfont.ttf') format('truetype');
 }
 
 body {
@@ -49,14 +49,14 @@ position: relative;
 width: 940px;
 height: 200px;
 margin: 0 auto;
-background: #fff url(images/headerimg.jpg) no-repeat left top;
+background: #fff url(/assets/headerimg.jpg) no-repeat left top;
 }
 
 #main {
 width: 940px;
 margin: 0 auto;
 padding-top: 30px;
-background: #FFF url(images/colbg.png) repeat-y;
+background: #FFF url(/assets/colbg.png) repeat-y;
 overflow: hidden;
 }
 

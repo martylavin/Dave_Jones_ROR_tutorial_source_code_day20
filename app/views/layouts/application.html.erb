@@ -26,14 +26,16 @@
 	</nav><!-- end of top nav -->
 	
 <header><!-- header -->
-		<div id="headerlogo"><img src="images/kookycook.png" alt="" /></div>
-		<h1><a href="#">Kooky Cook</a></h1>
-		<h2>Your cute and compelling tag line goes here</h2>
+		<div id="headerlogo"><img <%= image_tag("Marty_Lavin.jpg", :size => "120x120", :mouseover => image_path("rails.png")) %></div>
+		<h1><a href="#">Marty's Best Recipes</a></h1>
+		<h2>Isn't he cute?</h2>
 	</header><!-- end of header -->
+
+
+
 <section id="main"><!-- #main content and sidebar area -->
 			<section id="content"><!-- #content -->
 			
-
 <%= yield %>
 
 			</section><!-- end of #content -->
@@ -50,7 +52,7 @@
 					</ul>
 					
 				<h3>Sponsors</h3>
-					<img src="images/ad125.jpg" alt="" /><br /><img src="images/ad125.jpg" alt="" /><br /><br />
+					<%= image_tag "ad125.jpg" %><br /><%= image_tag "ad125.jpg" %><br /><br />
 
 				<h3>Connect With Us</h3>
 					<ul>
