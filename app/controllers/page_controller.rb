@@ -3,6 +3,9 @@ class PageController < ApplicationController
   end
 
   def about_us
+    @name = params[:name]
+    @email = params[:'Email Address']
+    @age = params[:'Age']
   end
 
   def recipes
@@ -15,6 +18,11 @@ class PageController < ApplicationController
   end
 
   def calendar
+    @year = params[:year]
+    @month = params[:month]
+    @name = 'Marty Lavin'
+    @My_time = Time.now
+    @products = %w(skis boots mittens poles coats pants gloves)
   end
 
   def blog

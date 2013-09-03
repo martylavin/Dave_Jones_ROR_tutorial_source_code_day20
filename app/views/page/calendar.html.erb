@@ -1,2 +1,15 @@
-<h1>Page#calendar</h1>
-<p>Find me in app/views/page/calendar.html.erb</p>
+<h1>Page#calendar for Marty</h1>
+<p>Find me in app/views/page/calender.html.erb</p>
+
+<%= @name + ' ' + @my_time.to_s%>
+<p><%= @month %> <% @year %> Products <br/> </p>
+
+
+<%= calendar(@month, @year) %> 
+
+<br/>
+<ol>
+<% @products.each do |product| %>
+<li><%= product.capitalize %></li>
+<% end %>
+</ol>
