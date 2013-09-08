@@ -1,21 +1,28 @@
 <h1>Page#about_us</h1>
 
-
 <%= content_for :title do %>
 	About us stuff, to make sure seo, important ranking stuff.
 <% end %>
-
+<!-- <%= flash[:error] %>-->
 <%= field_set_tag "Information", :class => 'input' do %><BR />
 	<%= form_tag do %>
 		<%= label_tag 'Name: ' %>
 		<%= text_field_tag 'name', @name, :size => 50 %><BR /><BR />
 		<%= label_tag 'Email: ' %>
-		<%= email_field_tag 'Email Address', @email, :placeholder => 'Enter your email address', :size => 50 %><BR /><BR />
+		<%= email_field_tag 'email', @email, :placeholder => 'Enter your email address', :size => 50 %><BR /><BR />
 		<%= label_tag 'Age:   ' %>
 		<%= number_field_tag 'age', @age, :min => 13,  :max => 120 %><BR /><BR />
+		<h2>What would you like to bring to the potluck?</h2>
+		<%= label_tag :food_salad, "Salad"  %>
+		<%= radio_button_tag  :food, :salad, @food == "salad"  %><BR />
+		<%= label_tag :food_main, "Main Dish"  %>
+		<%= radio_button_tag  :food, :main, @food == "main"  %><BR />
+		<%= label_tag :food_dessert, "Dessert"  %>
+		<%= radio_button_tag  :food, :dessert, @food == "dessert"  %><BR />
 		<p><%= submit_tag 'Submit your question'%><BR /></p>
 	<% end %>
 <% end %>
+<%= params.inspect %>
 
 <!-- <div style = "border: 2px red solid">
 	<heading> Params </heading>

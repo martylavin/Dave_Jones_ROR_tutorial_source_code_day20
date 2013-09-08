@@ -28,7 +28,16 @@
 
 <section id="main"><!-- #main content and sidebar area -->
 			<section id="content"><!-- #content -->
-			
+
+				<div styles = "border: 2px solid.red"
+					<% if flash[:notice] %>
+					<p class= "notice"><%= flash[:notice].html_safe %></p>
+					<%end%>
+					<% if flash[:error] %>
+					<p class= "error"><%= flash[:error].html_safe %></p>
+					<%end%>	
+				</div>			
+
 <%= yield %>
 
 			</section><!-- end of #content -->
@@ -36,8 +45,8 @@
 	<aside id="sidebar"><!-- sidebar -->
 				<h3>Things To Do</h3>
 					<%= things_to_do('http://www.google.com'  => 'www.google.com',
-						'http://www.lmgtfy.com' => 'www.lmgtfy.com',
-						page_calendar_path => 'Events') %>
+						'http://www.lmgtfy.com' => 'www.lmgtfy.com') %>
+						<!-- calendar_path => 'Events') %> -->
 
 					
 				<h3>Sponsors</h3>
