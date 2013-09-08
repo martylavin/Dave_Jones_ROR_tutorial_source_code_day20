@@ -35,14 +35,10 @@
 
 	<aside id="sidebar"><!-- sidebar -->
 				<h3>Things To Do</h3>
-					<ul>
-						<li><a href="#">Create Meals</a></li>
-						<li><a href="#">Chat With Friends</a></li>
-						<li><a href="#">Swap Recipes</a></li>
-						<li><a href="#">Play Games</a></li>
-						<li><a href="#">Buy Stuff</a></li>
-						<li><a href="#">Trade Stuff</a></li>
-					</ul>
+					<%= things_to_do('http://www.google.com'  => 'www.google.com',
+						'http://www.lmgtfy.com' => 'www.lmgtfy.com',
+						page_calendar_path => 'Events') %>
+
 					
 				<h3>Sponsors</h3>
 					<%= image_tag "ad125.jpg" %><br /><%= image_tag "ad125.jpg" %><br /><br />

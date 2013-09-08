@@ -14,5 +14,35 @@ module ApplicationHelper
 		cal_string += "</table>"
 		return cal_string.html_safe
 	end
+#______________________________________________________________
+
+	def things_to_do(links)
+		# key = url, value = body
+		html = "<ul>"
+		links.each do |url, body|
+			html += "<li>" + link_to( body, url) + "</li>"
+		end 
+
+		html += "</ul>"
+		return html.html_safe		
+	end
+
+def show_params
+	#html = '<div style = 'border: 2px red solid'>' 
+	#html += '<heading>Params<heading/>'
+	html += params.each do |key, value|
+	html += "#{key}: #{value} <BR />"	
+	end
+	#html += '</div>'
+	return html.html_safe
+end
+
+def puts_test
+		html1 = "<h1>Ask a supid marty 333question</h1>"
+		"jjjjjj"
+		return html1.html_safe
+	end
+
+	
 end
 

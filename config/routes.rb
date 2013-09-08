@@ -3,10 +3,12 @@ Demo2::Application.routes.draw do
   get "page/blog"
   get "page/home"
   get "page/about_us"
+  post "page/about_us"
   get "page/recipes"
   get "page/product"
   get "page/articles"
   get "page/calendar"
+  #get "page/calendar(/:year(/:month(/:day)))" => "page#calendar", :as => 'calendar'
   get "say/hello"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

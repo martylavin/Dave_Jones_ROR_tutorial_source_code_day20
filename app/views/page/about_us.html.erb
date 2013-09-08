@@ -5,4 +5,23 @@
 	About us stuff, to make sure seo, important ranking stuff.
 <% end %>
 
-<p>Find me in app/views/page/about_us.html.erb</p>
+<%= field_set_tag "Information", :class => 'input' do %><BR />
+	<%= form_tag do %>
+		<%= label_tag 'Name: ' %>
+		<%= text_field_tag 'name', @name, :size => 50 %><BR /><BR />
+		<%= label_tag 'Email: ' %>
+		<%= email_field_tag 'Email Address', @email, :placeholder => 'Enter your email address', :size => 50 %><BR /><BR />
+		<%= label_tag 'Age:   ' %>
+		<%= number_field_tag 'age', @age, :min => 13,  :max => 120 %><BR /><BR />
+		<p><%= submit_tag 'Submit your question'%><BR /></p>
+	<% end %>
+<% end %>
+
+<!-- <div style = "border: 2px red solid">
+	<heading> Params </heading>
+	<%= "Name: #{@name}" %>
+	<%= "Email: #{@email}" %>
+	<%= params.inspect %>
+</div> -->
+
+<!-- <%=  puts_test %> -->

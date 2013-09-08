@@ -18,6 +18,11 @@ table {
 	
 }
 
+input { 
+	
+	color: green;
+	
+}
 
 @font-face {
 	font-family: 'QikkiRegRegular';

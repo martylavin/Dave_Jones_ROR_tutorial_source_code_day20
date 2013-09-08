@@ -4,8 +4,8 @@ class PageController < ApplicationController
 
   def about_us
     @name = params[:name]
-    @email = params[:'Email Address']
-    @age = params[:'Age']
+    @email = params[:Email ]
+    @age = params[:Age]
   end
 
   def recipes
