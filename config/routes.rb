@@ -1,4 +1,6 @@
 Demo2::Application.routes.draw do
+  resources :recipes
+
   get "page/login"
   get "page/blog"
   get "page/home"

@@ -3,15 +3,17 @@
 one:
   name: MyString
   serves: 1
-  ingredients: MyText
+  cost: 9.99
   made_by: MyString
-  last_made: 2013-09-08 15:52:40
+  last_made: 2013-09-08 21:24:38
+  ingredients: MyString
   image: MyString
 
 two:
   name: MyString
   serves: 1
-  ingredients: MyText
+  cost: 9.99
   made_by: MyString
-  last_made: 2013-09-08 15:52:40
+  last_made: 2013-09-08 21:24:38
+  ingredients: MyString
   image: MyString
