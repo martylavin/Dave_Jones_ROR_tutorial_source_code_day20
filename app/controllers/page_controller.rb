@@ -20,6 +20,8 @@ class PageController < ApplicationController
   end
 
   def recipes
+    @recipes = Recipe.all 
+
   end
 
   def product

@@ -1,2 +1,10 @@
-<h1>Page#recipes</h1>
-<p>Find me in app/views/page/recipes.html.erb</p>
+<h3>Page#recipes</h3>
+
+<% @recipes.each do |recipe| %>
+<section style="border: 2px solid black; padding: 10px:margin:10px">
+	<h3> <%= recipe.name %> </h3> 
+	Made by: <%= recipe.made_by%><br/>
+	Serves: <%= recipe.serves %><br/>
+	Last Made: <%= recipe.last_made %>
+</section>
+<% end %>
