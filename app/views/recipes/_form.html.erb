@@ -29,11 +29,11 @@
   </div>
   <div class="field">
     <%= f.label :last_made %><br>
-    <%= f.datetime_select :last_made %>
+    <%= f.datetime_select :last_made, :start_year => 2000 %>
   </div>
   <div class="field">
     <%= f.label :ingredients %><br>
-    <%= f.text_field :ingredients %>
+    <%= f.text_area :ingredients %>
   </div>
   <div class="field">
     <%= f.label :image %><br>

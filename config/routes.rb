@@ -6,7 +6,7 @@ Demo2::Application.routes.draw do
   get "page/home"
   get "page/about_us"
   post "page/about_us"
-  get "page/recipes"
+  #get "page/recipes"
   get "page/product"
   get "page/articles"
   get "page/calendar"
@@ -16,7 +16,7 @@ Demo2::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'page#recipes'
+  root 'recipes#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
