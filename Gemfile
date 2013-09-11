@@ -6,6 +6,12 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+# will_paginate is a pagination library that integrates with Ruby on Rails, Sinatra, Merb,
+gem 'will_paginate', '~> 3.0'
+
+# Use faker to generate test data. Use the seeds file to do this. 
+gem 'faker'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

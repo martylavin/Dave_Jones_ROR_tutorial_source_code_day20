@@ -24,7 +24,7 @@
         <td><%= number_to_currency(recipe.cost) %></td>
         <td><%= recipe.made_by %></td>
         <td><%= recipe.last_made %></td>
-        <td><%= recipe.ingredients %></td>
+        <td><%= truncate (recipe.ingredients).html_safe %></td>
         <td><%= link_to "My Image", "/assets/#{recipe.image}" %></td>
         <td><%= link_to 'Show', recipe %></td>
         <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
