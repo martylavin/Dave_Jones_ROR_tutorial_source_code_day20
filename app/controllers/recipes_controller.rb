@@ -1,5 +1,12 @@
 class RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
+  # before_filter :authenticate
+
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+    username == "foo" && password == "bar"
+    end
+  end
 
   # GET /recipes
   # GET /recipes.json

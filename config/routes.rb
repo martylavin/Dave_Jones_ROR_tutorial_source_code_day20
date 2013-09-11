@@ -1,6 +1,9 @@
 Demo2::Application.routes.draw do
   resources :recipes
 
+  get "store" => "stores#index", :as => 'store'
+  get "store/:id(.:format)" => "stores#show", :as => 'store_id'
+
   get "page/login"
   get "page/blog"
   get "page/home"

@@ -1,0 +1,33 @@
+<h1>Listing recipes</h1>
+
+<%= will_paginate @recipes %><br />
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Ingredients</th>
+      <th>Image</th>
+      <th>Cost</th>
+       <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @recipes.each do |recipe| %>
+      <tr>
+        <td><%= link_to recipe.name, store_id_path(recipe.id) %></td>
+        <td><%= truncate (recipe.ingredients).html_safe %></td>
+        <td><%= link_to "My Image", "/assets/#{recipe.image}" %></td>
+        <td><%= number_to_currency(recipe.cost) %></td>
+        <td><%= link_to 'Show', store_id_path(recipe.id)  %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+ <%= will_paginate @recipes, :class=>'apple_pagination' %>
+
+<br />
+<!--<%= link_to 'New Recipe', new_recipe_path %>-->
