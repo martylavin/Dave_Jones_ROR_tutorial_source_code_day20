@@ -1,5 +1,6 @@
 <h1>Listing recipes</h1>
 
+<%= will_paginate @recipes %>
 <table>
   <thead>
     <tr>
@@ -36,4 +37,7 @@
 
 <br>
 
+ <%= will_paginate @recipes, :class=>'apple_pagination' %>
+
+<br />
 <%= link_to 'New Recipe', new_recipe_path %>
